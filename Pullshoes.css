@@ -1,0 +1,1318 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  background-image: url(images/banner.png);
+  background-size: 100% 100%;
+  height: 645px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.logo1 {
+  margin-top: 5px;
+  margin-left: 120px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 65px;
+  padding: 1em;
+  font-size: 22px;
+  margin-left: 450px;
+  margin-top: -42px;
+}
+.menu li a:hover {
+  color: #db5660;
+  cursor: pointer;
+}
+a {
+  color: #fff;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+.menu_button_container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu_toggle {
+  display: none;
+}
+.menu_button,
+.menu_button::before,
+.menu_button::after {
+  display: block;
+  background-color: #ff4e5b;
+  position: absolute;
+  height: 6px;
+  width: 32px;
+  border-radius: 3px;
+}
+.menu_button::before {
+  content: "";
+  margin-top: -8px;
+}
+.menu_button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+.icons {
+  margin-left: 1070px;
+  /*   */
+  margin-top: -45px;
+}
+.icons a {
+  margin-left: 30px;
+}
+#men1 {
+  color: #908d92;
+  margin-left: 5px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.shoe1 {
+  position: absolute;
+  left: 58%;
+  top: 5rem;
+}
+.shoe2 {
+  width: 490px;
+  height: 470px;
+}
+.new {
+  color: #db5660;
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.men {
+  color: white;
+  font-size: 52px;
+  margin-top: -35px;
+}
+.ipsum {
+  color: white;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: -15px;
+}
+.banner-contents {
+  display: flex;
+}
+.banner-text-contents {
+  position: absolute;
+  left: 20%;
+  top: 6rem;
+}
+.scroll-son {
+  position: relative;
+}
+.banner-sidetext-contents {
+  position: absolute;
+  display: grid;
+  gap: 50px;
+  left: 8%;
+  top: 5rem;
+}
+.buy {
+  background-color: #d34c57;
+  color: white;
+  height: 46px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 160px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding-bottom: 3px;
+  transition: 0.5s ease-in-out;
+}
+.buy:hover {
+  color: #db5660;
+  background-color: white;
+}
+.buttons {
+  display: flex;
+}
+.see {
+  color: #d34c57;
+  background-color: white;
+  height: 46px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 20px;
+  padding-bottom: 3px;
+  transition: 0.5s ease-in-out;
+}
+.see:hover {
+  color: white;
+  background-color: #db5660;
+}
+.circle {
+  border: 1px solid #f3f2f3;
+  border-radius: 80%;
+  width: 45px;
+  height: 42px;
+  padding: 10px;
+  margin-top: px;
+  margin-left: 0px;
+}
+#circle1 {
+  color: #f3f2f3;
+  font-size: 17px;
+  margin-top: -1px;
+  margin-left: px;
+}
+#men2 {
+  color: #908d92;
+  margin-left: px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+#collection {
+  margin-top: 100px;
+  margin-left: 120px;
+}
+.texts {
+  margin-left: 120px;
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: -10px;
+}
+.new-collection-shoes {
+  display: flex;
+  margin-top: 1rem;
+}
+.new_button {
+  color: white;
+  background-color: black;
+  border: none;
+  width: 90px;
+  height: 48px;
+  font-size: 15px;
+  margin-left: 90px;
+  margin-top: 5px;
+  position: absolute;
+  z-index: 5;
+}
+.shoe_container {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 3px 3px gray;
+  width: 520px;
+  height: 480px;
+  padding: 50px;
+  margin-left: 150px;
+  margin-top: 5px;
+  position: absolute;
+  z-index: 1;
+}
+.men_shoes {
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  margin-left: 150px;
+  font-size: 20px;
+}
+.ninety {
+  color: #db5660;
+  margin-left: -3px;
+}
+.price {
+  margin-left: 170px;
+  margin-top: -3px;
+}
+.stars {
+  display: flex;
+  margin-left: 155px;
+  margin-top: -15px;
+}
+.line1 {
+  width: 130px;
+  margin-left: 132px;
+  background-color: black;
+  color: black;
+  margin-top: -15px;
+}
+.pink_shoe {
+  margin-left: 20px;
+  margin-top: 18px;
+  width: 380px;
+  height: 280px;
+}
+.second_shoe_container {
+  margin-top: 70px;
+  margin-left: 580px;
+  width: 270px;
+  height: 280px;
+}
+.blue_shoe {
+  margin-left: 150px;
+  width: 370px;
+  height: 280px;
+  margin-top: -400px;
+}
+.blue_shoe1 {
+  margin-top: -180px;
+}
+.ninety {
+  color: #db5660;
+  margin-left: -3px;
+}
+.price1 {
+  margin-left: 300px;
+  margin-top: -3px;
+  width: 100px;
+}
+.stars1 {
+  display: flex;
+  margin-left: 283px;
+  margin-top: -15px;
+}
+.line2 {
+  width: 130px;
+  margin-left: 259px;
+  background-color: black;
+  color: black;
+  margin-top: -15px;
+  position: absolute;
+  z-index: 2;
+}
+.men_shoes1 {
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  margin-left: 280px;
+  font-size: 20px;
+  width: 150px;
+}
+.see_more {
+  background-color: #ff4e5b;
+  color: white;
+  border: none;
+  margin-top: 150px;
+  width: 160px;
+  height: 45px;
+  font-size: 20px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+.see_more:hover {
+  background-color: rgb(218, 217, 217);
+  color: #d34c57;
+  transition: 0.5s ease-in-out;
+}
+.racing_boots {
+  font-size: 28px;
+  margin-top: 120px;
+  margin-left: 80px;
+}
+.texts3 {
+  font-size: 19px;
+  margin-left: 70px;
+}
+.third_container {
+  background-color: #eae7e7;
+  width: 1124px;
+  margin-left: 80px;
+  padding: 10px;
+  margin-top: 50px;
+  height: 600px;
+  display: flex;
+}
+.third_shoe {
+  margin-left: 100px;
+  margin-top: 60px;
+  width: 480px;
+  height: 480px;
+}
+.sale {
+  margin-left: 140px;
+  font-size: 60px;
+  margin-top: 150px;
+  line-height: 70px;
+}
+#brown {
+  color: #ed2540;
+}
+.see_more1 {
+  background-color: #ff4e5b;
+  color: white;
+  border: none;
+  margin-top: 460px;
+  width: 160px;
+  height: 45px;
+  font-size: 20px;
+  margin-left: -240px;
+  cursor: pointer;
+}
+.see_more1:hover {
+  background-color: rgb(218, 217, 217);
+  color: #d34c57;
+  transition: 0.5s ease-in-out;
+}
+.new_products {
+  margin-top: 80px;
+  margin-left: 80px;
+  font-size: 35px;
+}
+.texts5 {
+  margin-left: 80px;
+  font-size: 19px;
+  margin-top: -15px;
+}
+.background {
+  background-color: #db5660;
+  width: 1320px;
+  height: 900px;
+  padding: 5px;
+}
+.three_boxes {
+  display: flex;
+}
+.first_box {
+  background-color: #ffffff;
+  width: 350px;
+  height: 350px;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.best {
+  margin-left: 130px;
+  margin-top: 10px;
+}
+.grey_shoe {
+  width: 100px;
+  height: 250px;
+  margin-left: 110px;
+  margin-top: 10px;
+}
+.stars3 {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.stars4 {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 45px;
+}
+.ninety {
+  color: #db5660;
+  margin-left: -3px;
+}
+.price3 {
+  margin-left: 285px;
+  margin-top: -23px;
+}
+.price4 {
+  margin-left: 285px;
+  margin-top: -19px;
+}
+.grey_shoe1 {
+  width: 1 0px;
+  height: 200px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.second_box {
+  background-color: #ffffff;
+  width: 350px;
+  height: 350px;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.three_boxes1 {
+  display: flex;
+}
+.now {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border: none;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  margin-left: 550px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.now:hover {
+  background-color: #ffff;
+  color: #db5660;
+}
+h4 {
+  margin-top: 100px;
+  margin-left: 80px;
+  font-size: 30px;
+}
+.inputs_section {
+  display: flex;
+}
+.black_box {
+  width: 500px;
+  height: 520px;
+  background-color: #42413e;
+  margin-left: 80px;
+  padding: 2px;
+}
+.name {
+  border: none;
+  width: 450px;
+  margin-left: 20px;
+  height: 50px;
+  margin-top: 30px;
+  font-size: 20px;
+  padding: 15px;
+}
+.message {
+  border: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 30px;
+  width: 450px;
+  margin-left: 20px;
+  padding-top: 60px;
+  font-size: 20px;
+  height: 190px;
+  padding-left: 20px;
+}
+.send {
+  background-color: #ff717b;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-left: 150px;
+}
+.send:hover {
+  background-color: white;
+  color: #ed2540;
+}
+.shop_banner {
+  margin-left: 59px;
+  width: 690px;
+  height: 520px;
+}
+.shop {
+  margin-top: 20px;
+}
+.footer {
+  width: 1340px;
+  height: 350px;
+  background-color: #272222;
+  margin-top: 150px;
+  padding: 10px;
+}
+.footer_logo {
+  margin-top: 20px;
+  margin-left: 80px;
+  height: 70px;
+}
+.call {
+  display: flex;
+  margin-left: 290px;
+  margin-top: -50px;
+}
+.call1 {
+  display: flex;
+  margin-left: 500px;
+  margin-top: -21px;
+}
+.number {
+  color: white;
+  margin-left: 10px;
+}
+.number:hover {
+  text-decoration: underline;
+}
+.icon {
+  margin-top: -19px;
+  margin-left: 900px;
+  cursor: pointer;
+}
+.icon img {
+  margin-left: 20px;
+}
+#closing_texts {
+  width: 160px;
+  color: white;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+.address {
+  margin-left: 300px;
+  margin-top: -130px;
+  width: 130px;
+  color: white;
+}
+.map {
+  height: 20px;
+}
+h5 {
+  color: white;
+  margin-top: -1px;
+  margin-left: 10px;
+  font-size: 22px;
+}
+#locs {
+  display: flex;
+}
+#home {
+  margin-top: -16px;
+}
+#list {
+  color: white;
+  line-height: 27px;
+  cursor: pointer;
+  margin-top: -20px;
+  margin-left: 32px;
+}
+#list:hover {
+  text-decoration: underline;
+}
+#company {
+  margin-left: 490px;
+  width: 150px;
+  margin-top: -135px;
+}
+#company1 {
+  margin-left: 730px;
+  width: 150px;
+  margin-top: -190px;
+}
+#list1 {
+  color: white;
+  line-height: 27px;
+  cursor: pointer;
+  margin-top: -20px;
+  margin-left: 15px;
+}
+#list1:hover {
+  text-decoration: underline;
+}
+h6 {
+  color: white;
+  font-size: 28px;
+  margin-top: -20px;
+}
+.letter {
+  margin-left: 970px;
+  margin-top: -200px;
+}
+.enter {
+  width: 305px;
+  height: 40px;
+  border: none;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-left: -42px;
+}
+.email_input {
+  margin-top: -50px;
+}
+#sub {
+  background-color: #ff4e5b;
+  color: white;
+  width: 80px;
+  border: none;
+  height: 40px;
+  margin-top: 8px;
+  margin-left: 48px;
+  cursor: pointer;
+}
+.sub2 {
+  margin-top: -48px;
+  margin-left: 136px;
+}
+#sub:hover {
+  background-color: white;
+  color: #ff4e5b;
+}
+.end {
+  margin-left: 500px;
+  cursor: pointer;
+}
+.end1:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.scroll-section {
+  opacity: 0 !important;
+  transform: translateY(350px) !important;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out !important;
+}
+.scroll-section.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+
+@media screen and (max-width: 700px) {
+  .menu_button_container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 22.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: -18px;
+    transition: 0.6s ease-in-out;
+    position: absolute;
+    z-index: 2;
+  }
+  #menu_toggle ~ .menu li {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  .menu li a:hover {
+    color: rgb(51, 51, 245);
+  }
+  #menu_toggle:checked ~ .menu li {
+    height: 3.6em;
+    padding-top: 15px;
+    margin-top: -10px;
+    padding-left: 30px;
+    transition: 0.3s ease-in-out;
+  }
+  .menu > li {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 90%;
+    color: black;
+    background-color: #db5660;
+  }
+  .menu > li:not(:last_child) {
+    border-bottom: 1px solid #444;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    padding: 1em;
+    font-size: 16px;
+    margin-left: 1rem;
+    margin-top: 8px;
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    background-color: #db5660;
+    border-radius: 1px;
+  }
+  .menu_button,
+  .menu_button::before,
+  .menu_button::after {
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 2px;
+    width: 32px;
+    border-radius: 3px;
+  }
+
+  .container {
+    background-size: 100% 100%;
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .logo1 {
+    margin-left: 20px;
+  }
+  .icons {
+    margin-top: 2rem !important;
+    display: block;
+  }
+  .icons a {
+    margin-left: 10px;
+  }
+  .banner-contents {
+    display: grid;
+  }
+  .banner-text-contents {
+    position: relative;
+    left: 8%;
+    top: -1rem;
+  }
+  #men1 {
+    color: #f2f0f3;
+    margin-left: 7rem;
+    margin-top: 22rem;
+    font-size: 20px;
+    /* display: none; */
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .shoe1 {
+    left: 40%;
+    transform: translateX(-50%);
+    top: 12rem;
+  }
+  .shoe2 {
+    width: 280px;
+    height: 250px;
+  }
+  .new {
+    font-size: 30px;
+  }
+  .men {
+    font-size: 33px;
+    margin-top: -1rem;
+  }
+  .ipsum {
+    font-size: 14px;
+  }
+  .buy {
+    height: 35px;
+    width: 90px;
+    border: none;
+    font-size: 15px;
+    padding-bottom: 3px;
+    transition: 0.5s ease-in-out;
+  }
+  .buy:hover {
+    color: #db5660;
+    background-color: white;
+  }
+  .see {
+    height: 35px;
+
+    width: 90px;
+    border: none;
+
+    font-size: 15px;
+
+    padding-bottom: 3px;
+    transition: 0.5s ease-in-out;
+    margin-top: 0px;
+  }
+  .see:hover {
+    color: white;
+    background-color: #db5660;
+  }
+  .circle {
+    border: 1px solid #f3f2f3;
+    border-radius: 80%;
+    width: 45px;
+    height: 42px;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    margin-top: 6.5rem;
+    margin-left: 105px;
+    /* display: none; */
+  }
+  #circle1 {
+    color: #f3f2f3;
+    font-size: 17px;
+    margin-top: -1px;
+    margin-left: px;
+    /* display: none; */
+  }
+  #men2 {
+    display: none;
+  }
+  #collection {
+    margin-top: 5rem;
+    margin-left: 10px;
+  }
+  .texts {
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: -10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .new_button {
+    width: 90px;
+    height: 45px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 5;
+  }
+  .shoe_container {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px 3px gray;
+    width: 312px;
+    height: 450px;
+    padding: 50px;
+    margin-left: 15px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+  }
+  .men_shoes {
+    margin-left: 50px;
+    font-size: 20px;
+  }
+  .ninety {
+    color: #db5660;
+    margin-left: -3px;
+  }
+  .price {
+    margin-left: 72px;
+    margin-top: -3px;
+  }
+  .stars {
+    display: flex;
+    margin-left: 55px;
+    margin-top: -15px;
+  }
+  .line1 {
+    width: 130px;
+    margin-left: 32px;
+    background-color: black;
+    color: black;
+    margin-top: -15px;
+  }
+  .pink_shoe {
+    margin-left: -36px;
+    margin-top: 18px;
+    width: 280px;
+    height: 220px;
+  }
+  .new-collection-shoes {
+    display: grid !important;
+  }
+  .second_shoe_container {
+    margin-top: 30rem;
+    margin-left: 15px;
+    height: 280px;
+  }
+  .blue_shoe_container {
+    width: 315px;
+    height: 450px;
+  }
+  .blue_shoe {
+    margin-left: 50px;
+    width: 200px;
+    height: 180px;
+    margin-top: -400px;
+  }
+  .blue_shoe1 {
+    margin-top: -200px;
+  }
+  .ninety {
+    color: #db5660;
+    margin-left: -3px;
+  }
+  .price1 {
+    margin-left: 120px;
+    margin-top: -3px;
+    width: 100px;
+  }
+  .stars1 {
+    display: flex;
+    margin-left: 100px;
+    margin-top: -15px;
+  }
+  .line2 {
+    width: 130px;
+    margin-left: 80px;
+    background-color: black;
+    color: black;
+    margin-top: -15px;
+    position: absolute;
+    z-index: 2;
+  }
+  .men_shoes1 {
+    margin-left: 100px;
+    font-size: 20px;
+    width: 150px;
+  }
+  .see_more {
+    background-color: #ff4e5b;
+    color: white;
+    border: none;
+    margin-top: 190px;
+    width: 160px;
+    height: 45px;
+    font-size: 20px;
+    margin-left: 80px;
+    cursor: pointer;
+  }
+  .see_more:hover {
+    background-color: rgb(218, 217, 217);
+    color: #d34c57;
+    transition: 0.5s ease-in-out;
+  }
+  .racing_boots {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+
+  .third_container {
+    width: 320px;
+    margin-left: 20px;
+    display: grid;
+    height: 500px;
+  }
+
+  .third_shoe {
+    margin-left: 20px;
+    margin-top: 6px;
+    width: 270px;
+    height: 260px;
+  }
+  .sale {
+    margin-left: 15px;
+    font-size: 40px;
+    margin-top: 40px;
+    line-height: 37px;
+    word-spacing: 10px;
+  }
+  #brown {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .see_more1 {
+    margin-top: 10px;
+    width: 160px;
+    height: 45px;
+    font-size: 20px;
+    margin-left: 57px;
+    cursor: pointer;
+  }
+  .new_products {
+    margin-top: 80px;
+    margin-left: 20px;
+    font-size: 35px;
+  }
+  .texts5 {
+    margin-left: 20px;
+    font-size: 19px;
+    margin-top: -15px;
+  }
+  .background {
+    background-color: #db5660;
+    margin-left: 15px;
+    width: 330px;
+    height: 1270px;
+    padding: 15px;
+  }
+  .three_boxes {
+    display: grid;
+  }
+  .first_box {
+    background-color: #ffffff;
+    width: 286px;
+    height: 350px;
+    margin-top: 40px;
+    margin-left: 2px;
+  }
+  .best {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  .grey_shoe {
+    width: 100px;
+    height: 250px;
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+  .stars3 {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .stars4 {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 45px;
+  }
+  .ninety {
+    color: #db5660;
+    margin-left: -3px;
+  }
+  .price3 {
+    margin-left: 225px;
+    margin-top: -23px;
+  }
+  .price4 {
+    margin-left: 225px;
+    margin-top: -19px;
+  }
+  .grey_shoe1 {
+    width: 1 0px;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .second_box {
+    background-color: #ffffff;
+    width: 30px;
+    height: 350px;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .three_boxes1 {
+    display: none;
+  }
+  .now {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    margin-left: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .now:hover {
+    background-color: #ffff;
+    color: #db5660;
+  }
+  h4 {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 30px;
+  }
+  .black_box {
+    width: 320px;
+    margin-top: -20px;
+    height: 460px;
+    background-color: #42413e;
+    margin-left: 18px;
+    padding-left: 15px;
+  }
+  .name {
+    border: none;
+    width: 270px;
+    margin-left: 2px;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 17px;
+    padding: 15px;
+  }
+  .message {
+    border: none;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    width: 270px;
+    margin-left: 2px;
+    padding-top: 30px;
+    font-size: 20px;
+    height: 130px;
+    padding-left: 20px;
+  }
+  .send {
+    background-color: #ff717b;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-left: 70px;
+  }
+  .send:hover {
+    background-color: white;
+    color: #ed2540;
+  }
+  .inputs_section {
+    display: grid;
+  }
+  .shop_banner {
+    margin-left: 20px;
+    width: 282px;
+    height: 420px;
+    margin-top: 550px;
+  }
+  .shop {
+    margin-top: -520px;
+  }
+  .footer {
+    width: 100%;
+    height: 680px;
+    background-color: #272222;
+    margin-top: 150px;
+    padding: 10px;
+    text-align: center !important;
+  }
+  .footer_logo {
+    margin-top: 20px;
+    margin-left: 2px;
+    height: 70px;
+  }
+  .call {
+    display: flex;
+    margin-left: 1px;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  .call1 {
+    display: flex;
+    margin-left: 4px;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .number {
+    color: white;
+    margin-left: 5px;
+  }
+  .number:hover {
+    text-decoration: underline;
+  }
+  .icon {
+    margin-top: 20px;
+    margin-left: 0px;
+    cursor: pointer;
+  }
+  .icon img {
+    margin-left: 20px;
+  }
+  #closing_texts {
+   display: none;
+  }
+  .address {
+    margin-left: 0px;
+    margin-top: 15px;
+    width: 180px;
+    color: white;
+  }
+  .map {
+    height: 20px;
+  }
+  h5 {
+    color: white;
+    margin-top: -1px;
+    margin-left: 10px;
+    font-size: 22px;
+  }
+  #locs {
+    display: flex;
+  }
+  #home {
+    margin-top: -28px;
+    width: 250px;
+  }
+  #list {
+    color: white;
+    line-height: 27px;
+    cursor: pointer;
+    margin-top: -20px;
+    margin-left: 32px;
+  }
+  #list:hover {
+    text-decoration: underline;
+  }
+  #company {
+    margin-left: 2px;
+    width: 150px;
+    margin-top: 25px;
+    line-height: 30px;
+  }
+  #company1 {
+    margin-left: 170px;
+    width: 100px;
+    margin-top: -193px;
+  }
+  #list1 {
+    color: white;
+    line-height: 27px;
+    cursor: pointer;
+    margin-top: -20px;
+    margin-left: 15px;
+  }
+  #list1:hover {
+    text-decoration: underline;
+  }
+  h6 {
+    color: white;
+    font-size: 28px;
+    margin-top: -20px;
+  }
+  .letter {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .enter {
+    width: 250px;
+    height: 40px;
+    border: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-left: 2px;
+  }
+  .email_input {
+    margin-top: -50px;
+  }
+  #sub {
+    background-color: #ff4e5b;
+    color: white;
+    width: 78px;
+    border: none;
+    height: 40px;
+    margin-top: -120px;
+    margin-left: 3rem;
+    cursor: pointer;
+  }
+  .sub2 {
+    margin-top: -30px;
+  }
+  .sub #sub:hover {
+    background-color: white;
+    color: #ff4e5b;
+  }
+  .end {
+    margin-left: 1px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .end1:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+}
